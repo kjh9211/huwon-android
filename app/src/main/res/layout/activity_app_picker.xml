@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_picker_title"
+        android:textColor="@color/text_primary"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/app_picker_description"
+        android:textColor="@color/text_secondary"
+        android:textSize="15sp" />
+
+    <GridView
+        android:id="@+id/appGridView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:columnWidth="104dp"
+        android:gravity="center"
+        android:horizontalSpacing="12dp"
+        android:numColumns="auto_fit"
+        android:paddingBottom="8dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="12dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backButton"
+        style="?attr/materialButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/back_button" />
+</LinearLayout>
